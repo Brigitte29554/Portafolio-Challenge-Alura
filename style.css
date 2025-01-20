@@ -1,0 +1,387 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #f4f4f4; 
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #ffffff; 
+    padding: 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+/* Estilo para la sección estrella */
+.estrella {
+    display: flex; 
+    align-items: center; 
+}
+
+.estrella img {
+    width: 40px; 
+    margin-right: 10px; 
+}
+
+/* Estilo para la navegación */
+nav {
+    display: flex; 
+}
+
+nav a {
+    margin: 0 15px; 
+    text-decoration: none; 
+    color: #333; 
+}
+
+/* Estilo para el correo electrónico */
+.correo a {
+    text-decoration: none; 
+    color: #007BFF; 
+}
+
+/* Estilos para la primera parte de la sección principal */
+.primera__parte {
+    display: flex; 
+    padding: 20px; 
+
+}
+
+/* Sección de inicio ocupa espacio disponible en dispositivos más grandes */
+.inicio {
+    flex: 1;
+   margin: 30px;
+}
+
+.fotopersonal img {
+    width: 250px; 
+    border-radius: 50%;
+}
+
+/* Estilos para los enlaces sociales en la sección inicial */
+.enlaces a {
+    margin-right: 15px; 
+    text-decoration: none; 
+    color: #007BFF; 
+}
+
+/* Media Queries para hacer el diseño responsivo */
+
+/* Para tabletas y dispositivos más pequeños (mínimo 600px)*/
+@media (max-width: 768px) {
+    .primera__parte {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .fotopersonal img {
+        width: 100%; 
+        max-width: 150px; 
+        height: auto;  
+        margin-top: 20px; 
+    }
+
+    nav {
+        flex-wrap: wrap; 
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin-bottom: 10px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+/* Para teléfonos móviles (mínimo 480px)*/
+@media (max-width: 480px) {
+   header {
+       flex-direction: column;
+       align-items: flex-start;
+   }
+
+   .estrella,
+   .correo {
+       margin-bottom: 10px;
+   }
+
+   nav a {
+       font-size: 14px;  
+   }
+}
+  
+  section {
+    margin-bottom: 2em; 
+  }
+  
+  h2 {
+    color: #000000; 
+    margin-bottom: 1em; 
+  }
+  
+  p {
+    margin-bottom: 1em; 
+  }
+  
+  /* Estilos para la sección "Sobre mi" */
+  .segunda__parte {
+    margin: 50px;
+    flex: auto;
+    margin-top: 0; 
+  }
+  
+  /* Estilo para la firma */
+  .firma {
+    text-align: center; 
+    margin-top: 5px; 
+  }
+  
+  .firma img {
+    max-width: 300px; 
+    display: block; 
+    margin: 10px; 
+    padding: 0%;
+  }
+  
+  /* Diseño responsivo (opcional) */
+  @media (max-width: 768px) {
+    .firma img {
+      max-width: 100%; 
+    }
+  }
+  .habilidades {
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    margin: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.habilidades h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los contenedores de cada habilidad */
+.habilidad__1,
+.habilidad__2,
+.habilidad__3 {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: white; 
+    border-radius: 8px; 
+    width: 200px;
+    height: 200px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /
+  }
+
+/* Estilos para las imágenes */
+.habilidades img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Estilos para los párrafos */
+.pasatiempos p {
+    margin-top: 10px;
+}
+
+.pasatiempos {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  margin: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pasatiempos h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Estilo para cada pasatiempo individual */
+.pasatiempo__1,
+.pasatiempo__2,
+.pasatiempo__3,
+.pasatiempo__4,
+.pasatiempo__5,
+.pasatiempo__6 {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 5px;
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  width: 120px; 
+  height: 120px; 
+}
+
+/* Estilos para las imágenes */
+.pasatiempos img {
+  width: 40px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Estilos para los párrafos */
+.pasatiempos p {
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+}
+
+.Estudios{
+  background-color: #EAF2FD;
+}
+
+.Estudios__titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Estudios__descripciones{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.estudio__tarjeta {
+  flex: 1;
+  min-width: 200px; 
+  max-width: 300px; 
+  margin: 10px;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: left;
+}
+
+.estudio__tarjeta img {
+  max-width: 80%; 
+  height: 150px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.estudio__tarjeta__titulo{
+  font-weight: bold;
+}
+
+.Experiencia{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.Experiencia__submenu{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Experiencia__submenu__imagen{
+  height: 500px;
+  width: 60%;
+  padding: 2%;
+}
+
+.desafio__1{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: left;
+  margin: 12% 5%;
+}
+
+.boton__repositorio{
+  width: 80%;
+  margin: 10px;
+  height: 50px;
+  font-size: 1rem;
+  background-color: #ffcc99;
+  border-radius: 8px;
+}
+
+.boton__demo{
+  width: 80%;
+  margin: 10px;
+  height: 50px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #86CEF3;
+  border-radius: 8px;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: row;
+  margin-left: 15%;
+}
+
+.formulario__imagen{
+  width: 30%;
+  padding: 2%;
+}
+
+.formulario__texto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  width: fit-content;
+}
+
+.formulario__entrada{
+  width: 500px;
+  margin: 1%;
+  height: 50px;
+  border: none;
+  font-size: 1rem;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.boton__enviar{
+  width: 200px;
+  font-size: 1rem;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 35%;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+}
